@@ -1,0 +1,31 @@
+Convert this XAUUSD behavior into a strict strategy specification.
+
+Behavior:
+Asian Range -> London Breakout
+
+Objective:
+Create the simplest machine-testable baseline with no advanced filters.
+
+Requirements:
+- Define the Asia session exactly
+- Define the London trigger window exactly
+- Define the breakout condition exactly
+- Define what counts as a valid breakout candle
+- Define invalidation exactly
+- Define stop loss logic
+- Define take profit logic
+- Define trade management logic
+- Define conditions that block entry
+- Separate signal, execution, and risk layers
+- Include all required parameters with sane default ranges
+- Include logging points for debugging
+- Avoid ambiguous language
+- Keep it simple enough to explain in two sentences
+
+Output format:
+1. strategy summary
+2. exact rules
+3. parameter table
+4. edge thesis
+5. failure modes
+6. test checklist
