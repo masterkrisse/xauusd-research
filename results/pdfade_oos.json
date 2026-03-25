@@ -1,0 +1,120 @@
+{
+  "strategy_name": "XAUUSD_PriorDay_SweepRejection_Fade",
+  "version": "v1.0_baseline",
+  "start_date": "2022-01-05",
+  "end_date": "2024-12-27",
+  "total_trades": 328,
+  "tp_count": 39,
+  "sl_count": 175,
+  "sl_gap_count": 21,
+  "time_exit_count": 93,
+  "end_of_data_count": 0,
+  "win_count": 107,
+  "loss_count": 221,
+  "win_rate": 0.3262,
+  "avg_win_r": 2.0254,
+  "avg_loss_r": -1.0063,
+  "expectancy_r": -0.0173,
+  "profit_factor": 0.9745,
+  "median_r": -1.0,
+  "best_trade_r": 10.6573,
+  "worst_trade_r": -5.4623,
+  "long_summary": {
+    "trade_count": 153,
+    "win_count": 54,
+    "win_rate": 0.3529,
+    "expectancy_r": 0.0893,
+    "avg_win_r": 2.0995,
+    "avg_loss_r": -1.0072
+  },
+  "short_summary": {
+    "trade_count": 175,
+    "win_count": 53,
+    "win_rate": 0.3029,
+    "expectancy_r": -0.1105,
+    "avg_win_r": 1.9499,
+    "avg_loss_r": -1.0056
+  },
+  "net_pnl_usd": -10620.47,
+  "initial_equity": 100000.0,
+  "final_equity": 89379.53,
+  "total_return_pct": -10.6205,
+  "max_drawdown_pct": 0.4051,
+  "sharpe_approx": -0.1474,
+  "params_snapshot": {
+    "candle_minutes": 15,
+    "session_boundary": "17:00 UTC",
+    "signal_window": "+14h to +23h after session start",
+    "time_exit": "+23.5h after session start",
+    "min_pdr_pct": 0.003,
+    "max_pdr_pct": 0.02,
+    "min_overshoot_pct": 0.0002,
+    "spread_price": 0.3,
+    "slippage_price": 0.2,
+    "stop_buffer_floor_pct": 0.0003,
+    "tp": "opposite_prior_day_boundary (structural)",
+    "risk_pct": 0.01,
+    "initial_equity": 100000.0
+  },
+  "passed_min_trade_count": true,
+  "passed_oos_expectancy": null,
+  "yearly_breakdown": {
+    "2022": {
+      "trades": 103,
+      "win_rate": 0.3689,
+      "expectancy_r": 0.2405,
+      "profit_factor": 1.4109,
+      "avg_win_r": 2.2386,
+      "avg_loss_r": -0.9275,
+      "tp_sl_time": "13/57/33",
+      "long_count": 58,
+      "short_count": 45
+    },
+    "2023": {
+      "trades": 123,
+      "win_rate": 0.2602,
+      "expectancy_r": -0.3147,
+      "profit_factor": 0.5871,
+      "avg_win_r": 1.72,
+      "avg_loss_r": -1.0303,
+      "tp_sl_time": "15/80/28",
+      "long_count": 59,
+      "short_count": 64
+    },
+    "2024": {
+      "trades": 102,
+      "win_rate": 0.3627,
+      "expectancy_r": 0.0809,
+      "profit_factor": 1.1208,
+      "avg_win_r": 2.0706,
+      "avg_loss_r": -1.0516,
+      "tp_sl_time": "11/59/32",
+      "long_count": 36,
+      "short_count": 66
+    }
+  },
+  "r_distribution": {
+    "percentiles": {
+      "p5": -1.1828,
+      "p10": -1.0,
+      "p25": -1.0,
+      "p50": -1.0,
+      "p75": 0.6861,
+      "p90": 2.3241,
+      "p95": 3.6701
+    },
+    "mean": -0.0173,
+    "std": 1.8656,
+    "min": -5.4623,
+    "max": 10.6573,
+    "buckets": {
+      "lt_neg1": 27,
+      "neg1_to_neg05": 173,
+      "neg05_to_0": 21,
+      "0_to_05": 22,
+      "05_to_1": 17,
+      "1_to_15": 18,
+      "gte_15": 50
+    }
+  }
+}

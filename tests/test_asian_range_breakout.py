@@ -150,15 +150,19 @@ class TestAsianRange:
         return get_session_boundaries(d, 2.0, 5.0, 15)
 
     def _make_asian_candles(self, high_val: float = 2010.0, low_val: float = 2002.0):
-        """32 candles from 00:00 to 07:45 UTC (winter day)."""
+        """
+        32 candles from 00:00 to 07:45 UTC (winter day).
+        The range of the resulting DataFrame is [low_val, high_val].
+        Most candles stay near the midpoint; one candle sets the high and one the low.
+        """
         times = pd.date_range("2023-01-15 00:00", periods=32, freq="15min", tz="UTC")
-        opens = [2005.0] * 32
-        highs = [2010.0] * 32
-        lows = [2002.0] * 32
-        closes = [2006.0] * 32
-        # Set one candle as the high and one as the low
-        highs[10] = high_val
-        lows[20] = low_val
+        mid = (high_val + low_val) / 2.0
+        opens  = [mid] * 32
+        highs  = [mid + 0.01] * 32   # keep all other candles near midpoint
+        lows   = [mid - 0.01] * 32
+        closes = [mid] * 32
+        highs[10] = high_val          # candle 10 sets the session high
+        lows[20]  = low_val           # candle 20 sets the session low
         return _make_candles(times.tolist(), opens, highs, lows, closes)
 
     def test_valid_range_computed_correctly(self):
