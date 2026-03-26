@@ -1,0 +1,108 @@
+{
+  "strategy": "XAUUSD_Short_Only_Macro_Filtered_Fade",
+  "version": "v1.0_baseline",
+  "start_date": "2018-02-06",
+  "end_date": "2021-12-08",
+  "total_trades": 98,
+  "tp_count": 8,
+  "sl_count": 48,
+  "sl_gap_count": 6,
+  "time_exit_count": 36,
+  "end_of_data_count": 0,
+  "win_count": 32,
+  "loss_count": 66,
+  "win_rate": 0.3265,
+  "avg_win_r": 1.2789,
+  "avg_loss_r": -0.9429,
+  "expectancy_r": -0.2174,
+  "profit_factor": 0.6576,
+  "median_r": -1.0,
+  "best_trade_r": 4.9063,
+  "worst_trade_r": -2.3056,
+  "net_pnl_usd": -19815.76,
+  "initial_equity": 100000.0,
+  "final_equity": 80184.24,
+  "total_return_pct": -19.8158,
+  "max_drawdown_pct": 0.2174,
+  "sharpe_approx": -2.7545,
+  "passed_min_trade_count": false,
+  "params": {
+    "macro_filter": "20-session MA slope over 5-session lookback < 0",
+    "ma_period": 20,
+    "slope_lookback": 5,
+    "signal": "PDH sweep-rejection (wick above PDH, close below)",
+    "direction": "SHORT only",
+    "tp_rule": "PDL (full prior-day range reversal \u2014 structural)",
+    "stop_rule": "wick high + stop_buffer_floor_pct * entry",
+    "signal_window": "07:00-16:00 UTC (+14h to +23h)",
+    "time_exit": "16:30 UTC (+23.5h)",
+    "min_pdr_pct": 0.003,
+    "max_pdr_pct": 0.02,
+    "min_overshoot_pct": 0.0002,
+    "spread_price": 0.3,
+    "slippage_price": 0.2,
+    "risk_pct": 0.01
+  },
+  "yearly_breakdown": {
+    "2018": {
+      "trades": 36,
+      "win_rate": 0.3889,
+      "expectancy_r": -0.0665,
+      "profit_factor": 0.8716,
+      "avg_win_r": 1.1609,
+      "avg_loss_r": -0.8475,
+      "tp_sl_time": "4/15/17"
+    },
+    "2019": {
+      "trades": 18,
+      "win_rate": 0.3333,
+      "expectancy_r": -0.0744,
+      "profit_factor": 0.884,
+      "avg_win_r": 1.7007,
+      "avg_loss_r": -0.962,
+      "tp_sl_time": "1/11/6"
+    },
+    "2020": {
+      "trades": 17,
+      "win_rate": 0.1765,
+      "expectancy_r": -0.6492,
+      "profit_factor": 0.2033,
+      "avg_win_r": 0.9386,
+      "avg_loss_r": -0.9894,
+      "tp_sl_time": "0/13/4"
+    },
+    "2021": {
+      "trades": 27,
+      "win_rate": 0.3333,
+      "expectancy_r": -0.2421,
+      "profit_factor": 0.6406,
+      "avg_win_r": 1.2945,
+      "avg_loss_r": -1.0104,
+      "tp_sl_time": "3/15/9"
+    }
+  },
+  "r_distribution": {
+    "percentiles": {
+      "p5": -1.2831,
+      "p10": -1.0,
+      "p25": -1.0,
+      "p50": -1.0,
+      "p75": 0.507,
+      "p90": 1.3587,
+      "p95": 2.1174
+    },
+    "mean": -0.2174,
+    "std": 1.2529,
+    "min": -2.3056,
+    "max": 4.9063,
+    "buckets": {
+      "lt_neg1": 14,
+      "neg1_to_neg05": 43,
+      "neg05_to_0": 9,
+      "0_to_05": 6,
+      "05_to_1": 5,
+      "1_to_15": 14,
+      "gte_15": 7
+    }
+  }
+}

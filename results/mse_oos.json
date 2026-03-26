@@ -1,0 +1,133 @@
+{
+  "strategy": "XAUUSD_Multi_Session_Exhaustion",
+  "version": "v1.0_baseline",
+  "start_date": "2022-01-05",
+  "end_date": "2024-12-27",
+  "total_trades": 369,
+  "tp_count": 97,
+  "sl_count": 128,
+  "sl_gap_count": 15,
+  "time_exit_count": 129,
+  "end_of_data_count": 0,
+  "win_count": 129,
+  "loss_count": 240,
+  "win_rate": 0.3496,
+  "avg_win_r": 1.3501,
+  "avg_loss_r": -0.7249,
+  "expectancy_r": 0.0005,
+  "profit_factor": 1.001,
+  "median_r": -0.2111,
+  "best_trade_r": 42.564,
+  "worst_trade_r": -3.267,
+  "avg_rr_structural": 3.048,
+  "long": {
+    "trades": 158,
+    "win_rate": 0.3418,
+    "expectancy_r": -0.1918,
+    "avg_win_r": 0.8046,
+    "avg_loss_r": -0.7092
+  },
+  "short": {
+    "trades": 211,
+    "win_rate": 0.3555,
+    "expectancy_r": 0.1445,
+    "avg_win_r": 1.7429,
+    "avg_loss_r": -0.737
+  },
+  "net_pnl_usd": -9416.99,
+  "initial_equity": 100000.0,
+  "final_equity": 90583.01,
+  "total_return_pct": -9.417,
+  "max_drawdown_pct": 0.443,
+  "sharpe_approx": 0.003,
+  "passed_min_trade_count": true,
+  "params": {
+    "n_sessions": 3,
+    "stop_rule": "S[-1].extreme + stop_buffer_pct * entry",
+    "tp_rule": "S[-2].close (retrace to 2 sessions ago)",
+    "time_exit": "next 17:00 UTC (one full session)",
+    "stop_buffer_pct": 0.0003,
+    "spread_price": 0.3,
+    "slippage_price": 0.2,
+    "risk_pct": 0.01
+  },
+  "rr_analysis": {
+    "min": 0.002,
+    "p25": 0.472,
+    "p50": 1.402,
+    "p75": 3.381,
+    "max": 42.564,
+    "mean": 3.048,
+    "lt_0.5": 95,
+    "0.5_1.0": 49,
+    "gte_1.0": 225
+  },
+  "yearly_breakdown": {
+    "2022": {
+      "trades": 119,
+      "win_rate": 0.3782,
+      "expectancy_r": 0.3333,
+      "profit_factor": 1.7902,
+      "avg_win_r": 1.997,
+      "avg_loss_r": -0.6784,
+      "avg_rr": 2.92,
+      "tp_sl_time": "33/42/44",
+      "long_trades": 54,
+      "short_trades": 65,
+      "long_exp_r": -0.2065,
+      "short_exp_r": 0.7818
+    },
+    "2023": {
+      "trades": 132,
+      "win_rate": 0.2879,
+      "expectancy_r": -0.2564,
+      "profit_factor": 0.4996,
+      "avg_win_r": 0.8893,
+      "avg_loss_r": -0.7196,
+      "avg_rr": 2.794,
+      "tp_sl_time": "29/54/49",
+      "long_trades": 72,
+      "short_trades": 60,
+      "long_exp_r": -0.3037,
+      "short_exp_r": -0.1997
+    },
+    "2024": {
+      "trades": 118,
+      "win_rate": 0.3898,
+      "expectancy_r": -0.0478,
+      "profit_factor": 0.8996,
+      "avg_win_r": 1.098,
+      "avg_loss_r": -0.7798,
+      "avg_rr": 3.46,
+      "tp_sl_time": "35/47/36",
+      "long_trades": 32,
+      "short_trades": 86,
+      "long_exp_r": 0.0845,
+      "short_exp_r": -0.097
+    }
+  },
+  "r_distribution": {
+    "percentiles": {
+      "p5": -1.0,
+      "p10": -1.0,
+      "p25": -1.0,
+      "p50": -0.2111,
+      "p75": 0.1999,
+      "p90": 1.2222,
+      "p95": 1.9321
+    },
+    "mean": 0.0005,
+    "std": 2.5658,
+    "min": -3.267,
+    "max": 42.564,
+    "buckets": {
+      "lt_neg1": 20,
+      "neg1_to_neg05": 129,
+      "neg05_to_0": 91,
+      "0_to_05": 61,
+      "05_to_1": 23,
+      "1_to_15": 18,
+      "gte_15": 27
+    }
+  }
+}

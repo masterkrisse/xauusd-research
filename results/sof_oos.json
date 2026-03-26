@@ -1,0 +1,99 @@
+{
+  "strategy": "XAUUSD_Short_Only_Macro_Filtered_Fade",
+  "version": "v1.0_baseline",
+  "start_date": "2022-02-04",
+  "end_date": "2024-12-03",
+  "total_trades": 75,
+  "tp_count": 6,
+  "sl_count": 42,
+  "sl_gap_count": 3,
+  "time_exit_count": 24,
+  "end_of_data_count": 0,
+  "win_count": 23,
+  "loss_count": 52,
+  "win_rate": 0.3067,
+  "avg_win_r": 1.6104,
+  "avg_loss_r": -0.9268,
+  "expectancy_r": -0.1488,
+  "profit_factor": 0.7685,
+  "median_r": -1.0,
+  "best_trade_r": 4.3095,
+  "worst_trade_r": -1.3761,
+  "net_pnl_usd": -11174.25,
+  "initial_equity": 100000.0,
+  "final_equity": 88825.75,
+  "total_return_pct": -11.1742,
+  "max_drawdown_pct": 0.1424,
+  "sharpe_approx": -1.7266,
+  "passed_min_trade_count": false,
+  "params": {
+    "macro_filter": "20-session MA slope over 5-session lookback < 0",
+    "ma_period": 20,
+    "slope_lookback": 5,
+    "signal": "PDH sweep-rejection (wick above PDH, close below)",
+    "direction": "SHORT only",
+    "tp_rule": "PDL (full prior-day range reversal \u2014 structural)",
+    "stop_rule": "wick high + stop_buffer_floor_pct * entry",
+    "signal_window": "07:00-16:00 UTC (+14h to +23h)",
+    "time_exit": "16:30 UTC (+23.5h)",
+    "min_pdr_pct": 0.003,
+    "max_pdr_pct": 0.02,
+    "min_overshoot_pct": 0.0002,
+    "spread_price": 0.3,
+    "slippage_price": 0.2,
+    "risk_pct": 0.01
+  },
+  "yearly_breakdown": {
+    "2022": {
+      "trades": 20,
+      "win_rate": 0.3,
+      "expectancy_r": -0.0708,
+      "profit_factor": 0.8831,
+      "avg_win_r": 1.7813,
+      "avg_loss_r": -0.8645,
+      "tp_sl_time": "1/11/8"
+    },
+    "2023": {
+      "trades": 29,
+      "win_rate": 0.2759,
+      "expectancy_r": -0.22,
+      "profit_factor": 0.6879,
+      "avg_win_r": 1.7581,
+      "avg_loss_r": -0.9736,
+      "tp_sl_time": "3/20/6"
+    },
+    "2024": {
+      "trades": 26,
+      "win_rate": 0.3462,
+      "expectancy_r": -0.1293,
+      "profit_factor": 0.7851,
+      "avg_win_r": 1.3651,
+      "avg_loss_r": -0.9205,
+      "tp_sl_time": "2/14/10"
+    }
+  },
+  "r_distribution": {
+    "percentiles": {
+      "p5": -1.0,
+      "p10": -1.0,
+      "p25": -1.0,
+      "p50": -1.0,
+      "p75": 0.8229,
+      "p90": 1.4131,
+      "p95": 2.5606
+    },
+    "mean": -0.1488,
+    "std": 1.3677,
+    "min": -1.3761,
+    "max": 4.3095,
+    "buckets": {
+      "lt_neg1": 7,
+      "neg1_to_neg05": 40,
+      "neg05_to_0": 5,
+      "0_to_05": 3,
+      "05_to_1": 6,
+      "1_to_15": 6,
+      "gte_15": 8
+    }
+  }
+}

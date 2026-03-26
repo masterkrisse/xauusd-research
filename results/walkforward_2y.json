@@ -1,0 +1,383 @@
+{
+  "strategy": "XAUUSD_Combined_PD_Fade_RegimeFiltered",
+  "version": "v1.0_walkforward",
+  "wf_design": {
+    "train_window": "1 year (rolling)",
+    "test_window": "6 months",
+    "step": "6 months",
+    "segments": 12,
+    "full_period": "2019-01 to 2024-12",
+    "regime_filter": "10-session trend sign (no optimisation)"
+  },
+  "segments": [
+    {
+      "segment": 1,
+      "train": "2018-01-01 \u2192 2019-12-31",
+      "test": "2020-01-01 \u2192 2020-06-30",
+      "trades": 22,
+      "win_rate": 0.1364,
+      "expectancy_r": -0.6574,
+      "profit_factor": 0.2675,
+      "return_pct": -10.832,
+      "max_drawdown_pct": 0.1358,
+      "sharpe": -8.696,
+      "tp": 1,
+      "sl": 15,
+      "sl_gap": 3,
+      "time_exit": 3,
+      "long": {
+        "trades": 12,
+        "win_rate": 0.1667,
+        "expectancy_r": -0.448,
+        "avg_win_r": 2.6165,
+        "avg_loss_r": -1.0609
+      },
+      "short": {
+        "trades": 10,
+        "win_rate": 0.1,
+        "expectancy_r": -0.9087,
+        "avg_win_r": 0.049,
+        "avg_loss_r": -1.0151
+      },
+      "positive": false
+    },
+    {
+      "segment": 2,
+      "train": "2018-07-01 \u2192 2020-06-30",
+      "test": "2020-07-01 \u2192 2020-12-31",
+      "trades": 20,
+      "win_rate": 0.25,
+      "expectancy_r": -0.0531,
+      "profit_factor": 0.921,
+      "return_pct": -0.991,
+      "max_drawdown_pct": 0.068,
+      "sharpe": -0.467,
+      "tp": 0,
+      "sl": 12,
+      "sl_gap": 1,
+      "time_exit": 7,
+      "long": {
+        "trades": 9,
+        "win_rate": 0.4444,
+        "expectancy_r": 0.698,
+        "avg_win_r": 2.8205,
+        "avg_loss_r": -1.0
+      },
+      "short": {
+        "trades": 11,
+        "win_rate": 0.0909,
+        "expectancy_r": -0.6676,
+        "avg_win_r": 1.1055,
+        "avg_loss_r": -0.845
+      },
+      "positive": false
+    },
+    {
+      "segment": 3,
+      "train": "2019-01-01 \u2192 2020-12-31",
+      "test": "2021-01-01 \u2192 2021-06-30",
+      "trades": 30,
+      "win_rate": 0.4333,
+      "expectancy_r": 0.2882,
+      "profit_factor": 1.5278,
+      "return_pct": 6.159,
+      "max_drawdown_pct": 0.0346,
+      "sharpe": 2.541,
+      "tp": 4,
+      "sl": 12,
+      "sl_gap": 2,
+      "time_exit": 12,
+      "long": {
+        "trades": 17,
+        "win_rate": 0.2941,
+        "expectancy_r": -0.2258,
+        "avg_win_r": 1.459,
+        "avg_loss_r": -0.9278
+      },
+      "short": {
+        "trades": 13,
+        "win_rate": 0.6154,
+        "expectancy_r": 0.9603,
+        "avg_win_r": 2.2163,
+        "avg_loss_r": -1.0492
+      },
+      "positive": true
+    },
+    {
+      "segment": 4,
+      "train": "2019-07-01 \u2192 2021-06-30",
+      "test": "2021-07-01 \u2192 2021-12-31",
+      "trades": 24,
+      "win_rate": 0.25,
+      "expectancy_r": -0.2584,
+      "profit_factor": 0.6754,
+      "return_pct": -5.157,
+      "max_drawdown_pct": 0.0881,
+      "sharpe": -2.578,
+      "tp": 2,
+      "sl": 16,
+      "sl_gap": 1,
+      "time_exit": 5,
+      "long": {
+        "trades": 11,
+        "win_rate": 0.1818,
+        "expectancy_r": -0.6326,
+        "avg_win_r": 0.9317,
+        "avg_loss_r": -0.9803
+      },
+      "short": {
+        "trades": 13,
+        "win_rate": 0.3077,
+        "expectancy_r": 0.0583,
+        "avg_win_r": 2.7596,
+        "avg_loss_r": -1.1423
+      },
+      "positive": false
+    },
+    {
+      "segment": 5,
+      "train": "2020-01-01 \u2192 2021-12-31",
+      "test": "2022-01-01 \u2192 2022-06-30",
+      "trades": 22,
+      "win_rate": 0.3636,
+      "expectancy_r": -0.04,
+      "profit_factor": 0.9377,
+      "return_pct": -0.958,
+      "max_drawdown_pct": 0.0415,
+      "sharpe": -0.425,
+      "tp": 1,
+      "sl": 13,
+      "sl_gap": 1,
+      "time_exit": 7,
+      "long": {
+        "trades": 14,
+        "win_rate": 0.4286,
+        "expectancy_r": 0.1195,
+        "avg_win_r": 1.6122,
+        "avg_loss_r": -1.0
+      },
+      "short": {
+        "trades": 8,
+        "win_rate": 0.25,
+        "expectancy_r": -0.3192,
+        "avg_win_r": 1.7872,
+        "avg_loss_r": -1.0213
+      },
+      "positive": false
+    },
+    {
+      "segment": 6,
+      "train": "2020-07-01 \u2192 2022-06-30",
+      "test": "2022-07-01 \u2192 2022-12-31",
+      "trades": 22,
+      "win_rate": 0.4545,
+      "expectancy_r": 0.5127,
+      "profit_factor": 2.1356,
+      "return_pct": 11.136,
+      "max_drawdown_pct": 0.039,
+      "sharpe": 3.352,
+      "tp": 2,
+      "sl": 8,
+      "sl_gap": 1,
+      "time_exit": 11,
+      "long": {
+        "trades": 13,
+        "win_rate": 0.3846,
+        "expectancy_r": 0.309,
+        "avg_win_r": 2.3106,
+        "avg_loss_r": -0.9421
+      },
+      "short": {
+        "trades": 9,
+        "win_rate": 0.5556,
+        "expectancy_r": 0.8071,
+        "avg_win_r": 1.932,
+        "avg_loss_r": -0.5991
+      },
+      "positive": true
+    },
+    {
+      "segment": 7,
+      "train": "2021-01-01 \u2192 2022-12-31",
+      "test": "2023-01-01 \u2192 2023-06-30",
+      "trades": 26,
+      "win_rate": 0.3462,
+      "expectancy_r": 0.1523,
+      "profit_factor": 1.2289,
+      "return_pct": 4.018,
+      "max_drawdown_pct": 0.108,
+      "sharpe": 1.293,
+      "tp": 4,
+      "sl": 15,
+      "sl_gap": 1,
+      "time_exit": 6,
+      "long": {
+        "trades": 13,
+        "win_rate": 0.3077,
+        "expectancy_r": 0.022,
+        "avg_win_r": 2.6241,
+        "avg_loss_r": -1.1344
+      },
+      "short": {
+        "trades": 13,
+        "win_rate": 0.3846,
+        "expectancy_r": 0.2826,
+        "avg_win_r": 2.1536,
+        "avg_loss_r": -0.8868
+      },
+      "positive": true
+    },
+    {
+      "segment": 8,
+      "train": "2021-07-01 \u2192 2023-06-30",
+      "test": "2023-07-01 \u2192 2023-12-31",
+      "trades": 18,
+      "win_rate": 0.1111,
+      "expectancy_r": -0.5843,
+      "profit_factor": 0.3205,
+      "return_pct": -10.913,
+      "max_drawdown_pct": 0.1139,
+      "sharpe": -7.874,
+      "tp": 1,
+      "sl": 14,
+      "sl_gap": 1,
+      "time_exit": 2,
+      "long": {
+        "trades": 10,
+        "win_rate": 0.2,
+        "expectancy_r": -0.3256,
+        "avg_win_r": 2.4801,
+        "avg_loss_r": -1.027
+      },
+      "short": {
+        "trades": 8,
+        "win_rate": 0.0,
+        "expectancy_r": -0.9077,
+        "avg_win_r": 0.0,
+        "avg_loss_r": -0.9077
+      },
+      "positive": false
+    },
+    {
+      "segment": 9,
+      "train": "2022-01-01 \u2192 2023-12-31",
+      "test": "2024-01-01 \u2192 2024-06-30",
+      "trades": 28,
+      "win_rate": 0.6071,
+      "expectancy_r": 0.6895,
+      "profit_factor": 2.926,
+      "return_pct": 21.025,
+      "max_drawdown_pct": 0.0403,
+      "sharpe": 5.198,
+      "tp": 4,
+      "sl": 10,
+      "sl_gap": 0,
+      "time_exit": 14,
+      "long": {
+        "trades": 10,
+        "win_rate": 0.6,
+        "expectancy_r": 1.4718,
+        "avg_win_r": 3.1196,
+        "avg_loss_r": -1.0
+      },
+      "short": {
+        "trades": 18,
+        "win_rate": 0.6111,
+        "expectancy_r": 0.2549,
+        "avg_win_r": 0.9648,
+        "avg_loss_r": -0.8606
+      },
+      "positive": true
+    },
+    {
+      "segment": 10,
+      "train": "2022-07-01 \u2192 2024-06-30",
+      "test": "2024-07-01 \u2192 2024-12-31",
+      "trades": 17,
+      "win_rate": 0.3529,
+      "expectancy_r": -0.1399,
+      "profit_factor": 0.8172,
+      "return_pct": -3.255,
+      "max_drawdown_pct": 0.0605,
+      "sharpe": -1.217,
+      "tp": 2,
+      "sl": 9,
+      "sl_gap": 2,
+      "time_exit": 4,
+      "long": {
+        "trades": 12,
+        "win_rate": 0.3333,
+        "expectancy_r": -0.4497,
+        "avg_win_r": 1.1535,
+        "avg_loss_r": -1.2513
+      },
+      "short": {
+        "trades": 5,
+        "win_rate": 0.4,
+        "expectancy_r": 0.6037,
+        "avg_win_r": 3.0092,
+        "avg_loss_r": -1.0
+      },
+      "positive": false
+    }
+  ],
+  "aggregate": {
+    "total_test_trades": 229,
+    "segments_with_trades": 10,
+    "positive_segments": 4,
+    "negative_segments": 6,
+    "pct_positive_segs": 0.4,
+    "combined_expectancy_r": 0.0336,
+    "combined_win_rate": 0.345,
+    "combined_profit_factor": 1.0518,
+    "combined_avg_win_r": 1.9778,
+    "combined_avg_loss_r": -0.9904,
+    "combined_return_pct": 10.232,
+    "combined_max_drawdown": 0.1753,
+    "combined_sharpe": 0.296,
+    "segment_expectancy_distribution": {
+      "mean": -0.009,
+      "min": -0.6574,
+      "max": 0.6895,
+      "values": [
+        -0.6574,
+        -0.0531,
+        0.2882,
+        -0.2584,
+        -0.04,
+        0.5127,
+        0.1523,
+        -0.5843,
+        0.6895,
+        -0.1399
+      ]
+    },
+    "yearly": {
+      "2020": {
+        "trades": 42,
+        "win_rate": 0.1905,
+        "expectancy_r": -0.3697
+      },
+      "2021": {
+        "trades": 54,
+        "win_rate": 0.3519,
+        "expectancy_r": 0.0453
+      },
+      "2022": {
+        "trades": 44,
+        "win_rate": 0.4091,
+        "expectancy_r": 0.2364
+      },
+      "2023": {
+        "trades": 44,
+        "win_rate": 0.25,
+        "expectancy_r": -0.149
+      },
+      "2024": {
+        "trades": 45,
+        "win_rate": 0.5111,
+        "expectancy_r": 0.3762
+      }
+    }
+  }
+}

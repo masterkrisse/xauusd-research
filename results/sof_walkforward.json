@@ -1,0 +1,124 @@
+{
+  "strategy": "XAUUSD_Short_Only_Macro_Filtered_Fade",
+  "version": "v1.0_walkforward",
+  "segments": [
+    {
+      "segment": 1,
+      "test": "2019-01-01\u21922019-06-30",
+      "trades": 9,
+      "expectancy_r": 0.1442,
+      "positive": true,
+      "profit_factor": 1.3245
+    },
+    {
+      "segment": 2,
+      "test": "2019-07-01\u21922019-12-31",
+      "trades": 9,
+      "expectancy_r": -0.2931,
+      "positive": false,
+      "profit_factor": 0.6504
+    },
+    {
+      "segment": 3,
+      "test": "2020-01-01\u21922020-06-30",
+      "trades": 3,
+      "expectancy_r": -0.8405,
+      "positive": false,
+      "profit_factor": 0.0191
+    },
+    {
+      "segment": 4,
+      "test": "2020-07-01\u21922020-12-31",
+      "trades": 14,
+      "expectancy_r": -0.6082,
+      "positive": false,
+      "profit_factor": 0.2453
+    },
+    {
+      "segment": 5,
+      "test": "2021-01-01\u21922021-06-30",
+      "trades": 11,
+      "expectancy_r": 0.3608,
+      "positive": true,
+      "profit_factor": 1.8972
+    },
+    {
+      "segment": 6,
+      "test": "2021-07-01\u21922021-12-31",
+      "trades": 16,
+      "expectancy_r": -0.6566,
+      "positive": false,
+      "profit_factor": 0.2367
+    },
+    {
+      "segment": 7,
+      "test": "2022-01-01\u21922022-06-30",
+      "trades": 10,
+      "expectancy_r": -0.7679,
+      "positive": false,
+      "profit_factor": 0.1181
+    },
+    {
+      "segment": 8,
+      "test": "2022-07-01\u21922022-12-31",
+      "trades": 10,
+      "expectancy_r": 0.6264,
+      "positive": true,
+      "profit_factor": 2.8441
+    },
+    {
+      "segment": 9,
+      "test": "2023-01-01\u21922023-06-30",
+      "trades": 16,
+      "expectancy_r": 0.2076,
+      "positive": true,
+      "profit_factor": 1.369
+    },
+    {
+      "segment": 10,
+      "test": "2023-07-01\u21922023-12-31",
+      "trades": 13,
+      "expectancy_r": -0.7462,
+      "positive": false,
+      "profit_factor": 0.1524
+    },
+    {
+      "segment": 11,
+      "test": "2024-01-01\u21922024-06-30",
+      "trades": 18,
+      "expectancy_r": 0.1908,
+      "positive": true,
+      "profit_factor": 1.388
+    },
+    {
+      "segment": 12,
+      "test": "2024-07-01\u21922024-12-31",
+      "trades": 8,
+      "expectancy_r": -0.8496,
+      "positive": false,
+      "profit_factor": 0.0
+    }
+  ],
+  "aggregate": {
+    "positive": 5,
+    "negative": 7,
+    "hit_rate": 0.4167,
+    "total_trades": 137,
+    "combined_expectancy_r": -0.2195,
+    "profit_factor": 0.6724,
+    "seg_exp_values": [
+      0.1442,
+      -0.2931,
+      -0.8405,
+      -0.6082,
+      0.3608,
+      -0.6566,
+      -0.7679,
+      0.6264,
+      0.2076,
+      -0.7462,
+      0.1908,
+      -0.8496
+    ]
+  }
+}

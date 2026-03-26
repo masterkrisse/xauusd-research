@@ -1,0 +1,237 @@
+{
+  "strategy": "XAUUSD_Round_Number_Rejection",
+  "version": "v1.0_baseline",
+  "start_date": "2022-01-03",
+  "end_date": "2024-12-30",
+  "total_trades": 278,
+  "tp_count": 116,
+  "sl_count": 107,
+  "sl_gap_count": 40,
+  "time_exit_count": 15,
+  "end_of_data_count": 0,
+  "win_count": 122,
+  "loss_count": 156,
+  "win_rate": 0.4388,
+  "avg_win_r": 0.9727,
+  "avg_loss_r": -1.1726,
+  "expectancy_r": -0.2311,
+  "profit_factor": 0.6487,
+  "median_r": -1.0,
+  "best_trade_r": 1.0,
+  "worst_trade_r": -4.6369,
+  "long": {
+    "trades": 93,
+    "win_rate": 0.4516,
+    "expectancy_r": -0.0819,
+    "avg_win_r": 0.9735,
+    "avg_loss_r": -0.9511
+  },
+  "short": {
+    "trades": 185,
+    "win_rate": 0.4324,
+    "expectancy_r": -0.3062,
+    "avg_win_r": 0.9723,
+    "avg_loss_r": -1.2802
+  },
+  "net_pnl_usd": -48416.52,
+  "initial_equity": 100000.0,
+  "final_equity": 51583.48,
+  "total_return_pct": -48.4165,
+  "max_drawdown_pct": 0.5406,
+  "sharpe_approx": -3.1739,
+  "passed_min_trade_count": true,
+  "params": {
+    "level_spacing": 50.0,
+    "touch_proximity_price": 1.5,
+    "min_rejection_price": 1.0,
+    "signal_window": "07:00-16:00 UTC (session +14h to +23h)",
+    "time_exit": "16:30 UTC (session +23.5h)",
+    "tp_r_multiplier": 1.0,
+    "stop_buffer_price": 0.5,
+    "spread_price": 0.3,
+    "slippage_price": 0.2,
+    "risk_pct": 0.01
+  },
+  "yearly_breakdown": {
+    "2022": {
+      "trades": 101,
+      "win_rate": 0.505,
+      "expectancy_r": -0.1098,
+      "profit_factor": 0.8166,
+      "avg_win_r": 0.9681,
+      "avg_loss_r": -1.2092,
+      "tp_sl_time": "48/47/6",
+      "long_trades": 35,
+      "short_trades": 66,
+      "long_exp_r": 0.0467,
+      "short_exp_r": -0.1928
+    },
+    "2023": {
+      "trades": 70,
+      "win_rate": 0.3714,
+      "expectancy_r": -0.3211,
+      "profit_factor": 0.5363,
+      "avg_win_r": 1.0,
+      "avg_loss_r": -1.1018,
+      "tp_sl_time": "26/40/4",
+      "long_trades": 25,
+      "short_trades": 45,
+      "long_exp_r": -0.1882,
+      "short_exp_r": -0.395
+    },
+    "2024": {
+      "trades": 107,
+      "win_rate": 0.4206,
+      "expectancy_r": -0.2868,
+      "profit_factor": 0.5852,
+      "avg_win_r": 0.9622,
+      "avg_loss_r": -1.1934,
+      "tp_sl_time": "42/60/5",
+      "long_trades": 33,
+      "short_trades": 74,
+      "long_exp_r": -0.1378,
+      "short_exp_r": -0.3533
+    }
+  },
+  "r_distribution": {
+    "percentiles": {
+      "p5": -1.8819,
+      "p10": -1.3309,
+      "p25": -1.0,
+      "p50": -1.0,
+      "p75": 1.0,
+      "p90": 1.0,
+      "p95": 1.0
+    },
+    "mean": -0.2311,
+    "std": 1.1561,
+    "min": -4.6369,
+    "max": 1.0,
+    "buckets": {
+      "lt_neg1": 47,
+      "neg1_to_neg05": 101,
+      "neg05_to_0": 8,
+      "0_to_05": 4,
+      "05_to_1": 16,
+      "1_to_15": 102,
+      "gte_15": 0
+    }
+  },
+  "level_breakdown": {
+    "1650": {
+      "trades": 13,
+      "win_rate": 0.5385,
+      "expectancy_r": 0.0267
+    },
+    "1700": {
+      "trades": 7,
+      "win_rate": 0.1429,
+      "expectancy_r": -1.0878
+    },
+    "1750": {
+      "trades": 14,
+      "win_rate": 0.5714,
+      "expectancy_r": -0.0398
+    },
+    "1800": {
+      "trades": 25,
+      "win_rate": 0.6,
+      "expectancy_r": 0.2238
+    },
+    "1850": {
+      "trades": 26,
+      "win_rate": 0.5,
+      "expectancy_r": -0.0258
+    },
+    "1900": {
+      "trades": 24,
+      "win_rate": 0.4583,
+      "expectancy_r": -0.0613
+    },
+    "1950": {
+      "trades": 37,
+      "win_rate": 0.3514,
+      "expectancy_r": -0.532
+    },
+    "2000": {
+      "trades": 22,
+      "win_rate": 0.2727,
+      "expectancy_r": -0.5433
+    },
+    "2050": {
+      "trades": 17,
+      "win_rate": 0.5882,
+      "expectancy_r": 0.1574
+    },
+    "2100": {
+      "trades": 1,
+      "win_rate": 0.0,
+      "expectancy_r": -1.1538
+    },
+    "2150": {
+      "trades": 4,
+      "win_rate": 0.75,
+      "expectancy_r": 0.2895
+    },
+    "2200": {
+      "trades": 3,
+      "win_rate": 1.0,
+      "expectancy_r": 1.0
+    },
+    "2250": {
+      "trades": 1,
+      "win_rate": 0.0,
+      "expectancy_r": -1.0
+    },
+    "2300": {
+      "trades": 9,
+      "win_rate": 0.3333,
+      "expectancy_r": -0.4663
+    },
+    "2350": {
+      "trades": 16,
+      "win_rate": 0.625,
+      "expectancy_r": 0.0274
+    },
+    "2400": {
+      "trades": 9,
+      "win_rate": 0.1111,
+      "expectancy_r": -1.0221
+    },
+    "2450": {
+      "trades": 5,
+      "win_rate": 0.0,
+      "expectancy_r": -1.3913
+    },
+    "2500": {
+      "trades": 8,
+      "win_rate": 0.125,
+      "expectancy_r": -0.8917
+    },
+    "2550": {
+      "trades": 2,
+      "win_rate": 0.5,
+      "expectancy_r": 0.0
+    },
+    "2600": {
+      "trades": 6,
+      "win_rate": 0.3333,
+      "expectancy_r": -0.394
+    },
+    "2650": {
+      "trades": 20,
+      "win_rate": 0.35,
+      "expectancy_r": -0.3955
+    },
+    "2700": {
+      "trades": 5,
+      "win_rate": 0.8,
+      "expectancy_r": 0.4788
+    },
+    "2750": {
+      "trades": 4,
+      "win_rate": 0.75,
+      "expectancy_r": 0.5
+    }
+  }
+}
